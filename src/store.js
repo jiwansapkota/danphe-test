@@ -1,17 +1,20 @@
 import React, { useReducer, createContext} from 'react';
 
-
+//list of given color for random selection
 const colorList = ["red", "green", "blue", "black", "orange"];
 
+//Initial app state
 const initialState = {
   color: 'red',
   colorHistory: []
 };
 
+//to handle color change event
 function changeColorReducer(state, action) {
   switch (action.type) {
     case 'CHANGE_MY_COLOR':
       let newColor = 'red';
+      // if previous state is blue, next is green, otherwise select one from the list randomly
       if (state.color === 'blue') {
         newColor = 'green';
       } else {
@@ -25,6 +28,7 @@ function changeColorReducer(state, action) {
       return state;
   }
 }
+
 const ColorContext = createContext();
 
 function ColorProvider({ children }) {

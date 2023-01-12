@@ -4,7 +4,6 @@ function TaskThree() {
     const [list, setList]=useState([])
     useEffect(()=>{
         setList(printFromOneToHundred())
-
     },[])
   return (
     <div>
