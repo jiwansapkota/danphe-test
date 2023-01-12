@@ -1,0 +1,29 @@
+.App {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+button{
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  font: 100;
+  color: aliceblue;
+  cursor: pointer;
+}
+.red{
+  background-color: #CA3433;
+} 
+.green{
+  background-color:green;
+} 
+.blue{
+  background-color:blue
+} 
+.black{
+  background-color:black;
+} 
+.orange{
+  background-color:orange;
+} 
